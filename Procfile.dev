@@ -1,0 +1,2 @@
+web: env RUBY_DEBUG_OPEN=true bin/rails server -b 'ssl://0.0.0.0:3000?key=localhost-key.pem&cert=localhost.pem'
+js: yarn build --watch
