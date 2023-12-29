@@ -11,6 +11,22 @@ class NewPostNotification < Noticed::Base
   # deliver_by :slack
   # deliver_by :custom, class: "MyDeliveryMethod"
 
+  deliver_by :web_push, data_method: :web_push_data
+
+  param :post
+
+  def post
+    params[:post]
+  end
+
+  def web_push_data
+    {
+      title: "New post: #{post.title}",
+      body: post.content.truncate(40),
+      url: post_url(post),
+    }
+  end
+
   # Add required params
   #
   # param :post

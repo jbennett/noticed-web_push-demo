@@ -168,3 +168,7 @@ esbuild@^0.19.10:
     "@esbuild/win32-arm64" "0.19.10"
     "@esbuild/win32-ia32" "0.19.10"
     "@esbuild/win32-x64" "0.19.10"
+
+"noticed-web_push@github:jbennett/noticed-web_push":
+  version "0.1.0"
+  resolved "https://codeload.github.com/jbennett/noticed-web_push/tar.gz/8a48da40e63fad9cc94c31665d87e2c350989e89"

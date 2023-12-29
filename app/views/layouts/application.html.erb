@@ -8,9 +8,13 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
-  </head>
+  
+		<%= tag.link rel: :manifest, href: "/app.webmanifest" %>
+		<%= web_push_public_key_meta_tag %>
+</head>
 
   <body>
+		<button id="enable_notifications" style="display: none">Enable Notifications</button>
     <%= yield %>
   </body>
 </html>

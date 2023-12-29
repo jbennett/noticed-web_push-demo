@@ -64,3 +64,5 @@ end
 gem "clearance", "~> 2.6"
 
 gem "noticed", "~> 1.6"
+
+gem "noticed-web_push", "~> 0.1.0", :github => "jbennett/noticed-web_push"
